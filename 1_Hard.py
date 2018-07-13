@@ -44,3 +44,20 @@ else:
         print(reaction3)
     else:
         print(reaction6)
+
+#Решение от преподавателя:
+name = input('Введите имя: ')
+age = int(input('Введите возраст: '))
+weight = int(input('Введите вес: '))
+
+
+if age < 30 and 50 <= weight < 120:
+    print('Вы в отличной форме', name, age)
+elif age > 40 and (weight < 50 or weight > 120):
+    print('Вам бы к врачу!')
+elif age > 30 and (weight < 50 or weight > 120):
+    print('Вам бы спортом заняться!')
+else:
+    print('Знаете мой врачебный опыт ограничивается примитивной формулой основанной на весе и '
+          'возрасте, приходите, когда будете подходить под эту формулу!')
+
